@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Suggest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <div id="formCard" class="card">
+      <h1 class="title">Health Suggest</h1>
+      <p class="subtitle">Get simple home remedies for your health issues</p>
+
+      <select id="issueSelect">
+        <option value="">-- Select a Health Issue --</option>
+        <option>Headache</option>
+        <option>Stomach Pain</option>
+        <option>Fever</option>
+        <option>Joint Pain</option>
+        <option>Skin Rash</option>
+        <option>Diabetes</option>
+        <option>Hypertension</option>
+        <option>Chest Pain</option>
+        <option>Fatigue</option>
+        <option>Anxiety</option>
+        <option>Insomnia</option>
+        <option>Eye Strain</option>
+        <option>Back Pain</option>
+        <option>Depression</option>
+        <option>Cold/Flu</option>
+        <option>Asthma</option>
+        <option>Sinus Infection</option>
+        <option>Acid Reflux</option>
+        <option>Arthritis</option>
+        <option>Allergies</option>
+      </select>
+
+      <button onclick="getSuggestion()">Get Suggestion</button>
+    </div>
+
+    <div id="suggestionBox" class="result-box">
+      <h2>Home Remedy:</h2>
+      <p id="suggestionText"></p>
+    </div>
+
+    <div class="team-box">
+      <h3>Created By:</h3>
+      <p>Bhoomi, Sneha, Keerti, Babu, Siddu</p>
+      <h3>Guided By:</h3>
+      <p>Sir Anand Gudnavar</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

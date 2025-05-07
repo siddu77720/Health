@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #b9fbc0, #a0eec0, #cbf3f0);
+    background-size: 600% 600%;
+    animation: moveBG 12s ease infinite;
+    color: #2A4D2F;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes moveBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: 95vh;
+    justify-content: space-evenly;
+  }
+  
+  .card, .result-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #388E3C;
+  }
+  
+  .subtitle {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #2e7d32;
+  }
+  
+  select {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+    background: #f1f8e9;
+    font-size: 1rem;
+    color: #2A4D2F;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #2e7d32;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px #4CAF50;
+    animation: glow 2s infinite;
+  }
+  
+  @keyframes glow {
+    0% { box-shadow: 0 0 8px #4CAF50; }
+    50% { box-shadow: 0 0 20px #4CAF50; }
+    100% { box-shadow: 0 0 8px #4CAF50; }
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .result-box {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  
+  .result-box.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .team-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #2e7d32;
+    border: 1px solid #4CAF50;
+    margin-top: 10px;
+  }
+  
